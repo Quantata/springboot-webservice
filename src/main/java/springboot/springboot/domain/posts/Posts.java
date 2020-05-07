@@ -21,11 +21,9 @@ public class Posts extends BaseTimeEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	// length 안쓰면 문자열인 경우 크기 255 기본
 	@Column(length = 500, nullable = false)
 	private String title;
 	
-	// columnDefinition : ColumnType 등 선언할때 슴
 	@Column(columnDefinition = "TEXT", nullable = false)
 	private String content;
 	

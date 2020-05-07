@@ -30,7 +30,7 @@ import springboot.web.dto.PostsSaveRequestDto;
 import springboot.web.dto.PostsUpdateRequestDto;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)	// port�� �浹�� �� �ֱ� ������ port��ȣ ����
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class PostsApiControllerTests {
 
 	@LocalServerPort

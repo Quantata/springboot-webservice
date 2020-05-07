@@ -38,6 +38,9 @@ dependencies {
     
     // 가짜 사용자 추가
     testCompile 'org.springframework.security:spring-security-test'
+    
+    // using mariadb
+    compile 'org.mariadb.jdbc:mariadb-java-client'
 }
 
 test {

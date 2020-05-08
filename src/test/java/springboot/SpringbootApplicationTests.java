@@ -7,9 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpringbootApplicationTests {
 
-	@Ignore
-	@Test
-	void contextLoads() {
-	}
+//	@Ignore
+//	@Test
+//	void contextLoads() {
+//	}
 
 }

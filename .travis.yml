@@ -36,8 +36,8 @@ deploy:
       access_key_id: $AWS_ACCESS_KEY            # travis에 넣은 IAM KEY
       secret_access_key: $ACCESS_SECRET_KEY
       bucket: a1student13-springboot-webservice # 내가 접근할 S3 버킷
-      key: springboot-webservice.zip            # 전달할 파일의 형태
       region: ap-northeast-2
+      key: springboot-webservice.zip            # 전달할 파일의 형태
       bundle_type: zip
       application: springboot-webservice            # AWS 콘솔에서 등록한 Codedeploy 애플리케이션
       deployment_group: springboot-webservice-group # AWS 콘솔에서 등록한 Codedeploy 배포 그룹

@@ -1,6 +1,7 @@
 package springboot.web;
 
 import org.assertj.core.api.Assertions;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ public class IndexControllerTest {
 	@Autowired
 	private TestRestTemplate restTemplate;
 	
+	@Ignore
 	@Test
 	public void 메인페이지_로딩() {
 		String body = this.restTemplate.getForObject("/", String.class);

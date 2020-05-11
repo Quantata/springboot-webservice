@@ -10,10 +10,6 @@ PROJECT_NAME=springboot-webservice
 echo "> $REPOSITORY 디렉터리로 이동"
 cd $REPOSITORY
 
-PWD=$(pwd)
-echo "> $PWD"
-
-
 echo "> Build 파일 복사"
 echo "> cp $REPOSITORY/zip/*.war $REPOSITORY/"
 cp $REPOSITORY/zip/*.war $REPOSITORY/

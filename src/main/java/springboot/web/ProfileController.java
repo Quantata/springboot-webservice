@@ -26,7 +26,7 @@ public class ProfileController {
 		List<String> profiles = Arrays.asList(env.getActiveProfiles());
 		String defaultProfile = profiles.isEmpty() ? "default" : profiles.get(0);
 		// 첫번째 springboot는 real1, 두번째는 real2
-		// 첫번째는 8001, 두번째는 8002 이렇게 분리
+		// 첫번째는 8081, 두번째는 8082 이렇게 분리
 		List<String> realProfiles = Arrays.asList("real", "real1", "real2");
 		return profiles.parallelStream().filter(realProfiles::contains).findAny().orElse(defaultProfile);
 	}

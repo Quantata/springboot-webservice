@@ -12,7 +12,8 @@ cd $REPOSITORY
 
 echo "> Build 파일 복사"
 echo "> cp $REPOSITORY/zip/*.war $REPOSITORY/"
-cp $REPOSITORY/zip/*.war $REPOSITORY/
+IDLE_PORT=$(find_idle_port)
+cp $REPOSITORY/zip/*.war $REPOSITORY/${IDLE_PORT}
 
 JAR_NAME=$(ls -tr $REPOSITORY/ | grep war | tail -n 1)
 IDLE_PROFILE=$(find_idle_profile)
